@@ -1,0 +1,41 @@
+#home {
+  font-family: Poppins, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  #header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+      text-shadow: 0 0 8px rgb(0 0 0 / 60%);
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(black, 0.2), rgba(black, 0.2)), url("../public/home.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 15%;
+    #header-title {
+      font-size: 3.5rem;
+      font-weight: 500;
+    }
+    #header-subtitle {
+      font-size: 2rem;
+    }
+    #header-btn {
+      font-family: Poppins, sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      height: 4rem;
+      width: 15rem;
+      color: white;
+      background-color: rgba(39,116,174,.9);
+      border: none;
+      border-radius: 0.5rem;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+  }
+}
