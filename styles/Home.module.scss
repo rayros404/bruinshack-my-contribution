@@ -63,6 +63,7 @@
       height: 300px;
       border-radius: 0.5rem;
       cursor: pointer;
+      transition: 0.3s;
     }
     #meet-the-team {
       grid-column: 1/3;
@@ -84,6 +85,11 @@
       background-size: cover;
     }
   }
+}
+.work-card:hover {
+  transform: scale(1.01);
+  z-index: 3;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 40%);
 }
 
 
