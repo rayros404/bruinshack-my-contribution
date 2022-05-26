@@ -9,14 +9,14 @@
     flex-direction: column;
     justify-content: center;
     color: white;
-      text-shadow: 0 0 8px rgb(0 0 0 / 60%);
+    text-shadow: 0 0 8px rgb(0 0 0 / 60%);
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-image: linear-gradient(rgba(black, 0.2), rgba(black, 0.2)), url("../public/home.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-left: 15%;
+    padding-left: 100px;
     #header-title {
       font-size: 3.5rem;
       font-weight: 500;
@@ -36,6 +36,80 @@
       border-radius: 0.5rem;
       margin-top: 1rem;
       cursor: pointer;
+    }
+  }
+  #my-work-title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #2774ae;
+    margin-top: 2rem;
+  }
+  #my-work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    width: 100%;
+    padding: 0 100px;
+    margin: 2rem 0;
+    .work-card {
+      font-size: 2rem;
+      font-weight: 500;
+      text-align: center;
+      color: white;
+      text-shadow: 0 0 8px rgb(0 0 0 / 60%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 300px;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+    #meet-the-team {
+      grid-column: 1/3;
+      background-image: linear-gradient(rgba(black, 0.2), rgba(black, 0.2)), url("../public/meet-the-team.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #contact-us {
+      background-image: linear-gradient(rgba(black, 0.2), rgba(black, 0.2)), url("../public/contact-us.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #explore-more-dorms {
+      background-image: linear-gradient(rgba(black, 0.2), rgba(black, 0.2)), url("../public/explore-more-dorms.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  #home {
+    #header {
+      padding-left: 32px;
+      #header-title {
+        font-size: 2rem;
+      }
+      #header-subtitle {
+        font-size: 1.5rem;
+      }
+      #header-btn {
+      font-size: 1rem;
+      letter-spacing: 2px;
+      height: 3rem;
+      width: 7.5rem;
+      }
+    }
+    #my-work {
+      padding: 0 32px;
+      grid-template-columns: 1fr;
+      #meet-the-team {
+        grid-column: 1/2;
+      }
     }
   }
 }

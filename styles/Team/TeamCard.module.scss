@@ -1,0 +1,93 @@
+@use "/styles/constants.scss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+
+.card-wrapper {
+  position: relative;
+  .team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 196px;
+    height: 272px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: 0.3s;
+    cursor: pointer;
+    .headshot-wrapper {
+      padding-top: 13px;
+      border-radius: 6px;
+    }
+    .card-name {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .card-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      color: #0C6DA7;
+      margin-top: 3px;
+    }
+    .socials-container {
+      display: flex;
+      gap: 12px;
+      margin-top: 8px;
+    }
+    .portfolio-btn {
+      font-family: constants.$primary-font;
+      font-weight: 500;
+      font-size: 11px;
+      height: 25px;
+      width: 112px;
+      color: white;
+      background-color: #0C6DA7;
+      border: none;
+      border-radius: 6px;
+      margin-top: 3px;
+      cursor: pointer;
+    }
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 196px;
+    height: 272px;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    transition: .3s ease;
+    background: rgba(113, 113, 113, 0.63);
+    color: white;
+    font-size: 12px;
+    line-height: 18px;
+    z-index: 1;
+    .bio {
+      margin-top: 1rem;
+    }
+    .overlay-info {
+      padding: 1.2rem 0 0 1.3rem;
+
+      .overlay-bold-text {
+        font-weight: 600;
+        display: inline;
+        margin-right: 5px;
+      }
+      .overlay-regular-text {
+        font-weight: 400;
+        display: inline;
+      }
+    }
+  }
+  .team-card:hover{
+    border: 1px solid #0C6DA7;
+    transition: 0.3s;
+  }
+}
+
+

@@ -1,0 +1,59 @@
+@use "./constants.scss";
+#navbar-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    height: 64px;
+    width: 100%;
+    background-color: rgba(39,116,174,.9);
+    box-shadow: 0 5px 10px rgb(0 0 0 / 30%);
+    padding: 16px 100px;
+  }
+  #pages-dropdown {
+    overflow: hidden;
+    background-color: rgba(39,116,174,.9);
+    padding: 0 100px;
+    transition: 0.3s;
+    .page-link {
+      padding: 1rem 0;
+    }
+  }
+  .nav-btn {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    cursor: pointer;
+  }
+  #down-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  #navbar-wrapper {
+    #navbar {
+      padding: 16px 32px;
+      #pages-btn {
+        display: none;
+      }
+    }
+  }
+}

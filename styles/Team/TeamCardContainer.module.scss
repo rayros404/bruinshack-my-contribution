@@ -1,0 +1,40 @@
+@use "/styles/Team/breakpoints.scss";
+
+.team {
+  width: 704px;
+  // width: 1210px;
+}
+.team-leads {
+  width: 1210px;
+}
+.team-title {
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin: 11.5rem 0 2.5rem 0;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 55px;
+  // row gap: 50px
+  // col gap: 55px
+}
+//
+@media screen and (max-width: breakpoints.$tablet) {
+  .team.team-leads {
+    width: auto;
+  }
+  .team-title {
+    text-align: center;
+  }
+  .card-container {
+    width: auto;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1672px) {
+  .team-leads {
+    width: 704px;
+  }
+}
