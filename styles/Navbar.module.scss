@@ -17,6 +17,9 @@
     background-color: rgba(39,116,174,.9);
     box-shadow: 0 5px 10px rgb(0 0 0 / 30%);
     padding: 16px 100px;
+    #home-btn:hover {
+      transform: none;
+    }
   }
   #pages-dropdown {
     overflow: hidden;
@@ -37,6 +40,10 @@
     background-color: rgba(0,0,0,0);
     border: none;
     cursor: pointer;
+    transition: 0.1s;
+  }
+  .nav-btn:hover {
+    transform: scale(1.05);
   }
   #down-icon {
     display: flex;

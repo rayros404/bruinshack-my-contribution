@@ -17,6 +17,7 @@ const Navbar = () => {
       <div id={styles["navbar"]}>
         <Link href="/">
           <button 
+            id={styles["home-btn"]}
             className={styles["nav-btn"]}
             onClick={closeShow}
             style={{fontWeight:600}}

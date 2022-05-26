@@ -1,17 +1,18 @@
 import styles from "../styles/Home.module.scss"
 import Link from "next/link"
+import { useRef } from "react"
 
 const Home = () => {
+  const myWork = useRef(null)
+  const executeScroll = () => myWork.current.scrollIntoView({behavior: "smooth"})   
   return (
     <main id={styles["home"]}>
       <div id={styles["header"]}>
         <div id={styles["header-title"]}>BruinShack</div>
         <div id={styles["header-subtitle"]}>Ray's Contribution</div>
-        <Link href={`#${styles["my-work-title"]}`}>
-            <button id={styles["header-btn"]}>View Work</button>
-        </Link>
+          <button id={styles["header-btn"]} onClick={executeScroll}>View Work</button>
       </div>
-      <h1 id={styles["my-work-title"]}>My Work</h1>
+      <h1 id={styles["my-work-title"]} ref={myWork}>My Work</h1>
       <div id={styles["my-work"]}>
         <Link href="/team">
           <div 
