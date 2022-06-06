@@ -1,0 +1,46 @@
+.carouselWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .carousel {
+    display: flex;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 1rem 0;
+    .slideWrapper {
+      display: flex;
+      transition: 0.3s;
+    } 
+    .arrow {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 45px;
+      width: 45px;
+      background-color: white;
+      opacity: 50%;
+      margin: auto;
+      border: none;
+      border-radius: 50%;
+      z-index: 2;
+      cursor: pointer;
+    }
+    .arrow:hover {
+      opacity: 90%;
+    }
+    .left {
+      left: 1rem;
+    }
+    .right {
+      right: 1rem;
+      transform: rotate(180deg);
+    }
+  }
+  .indexBtnContainer {
+    display: flex;
+  }
+}

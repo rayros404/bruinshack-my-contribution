@@ -34,7 +34,7 @@ const Home = () => {
             </div>
           </div>
         </Link>
-        <Link href="#">
+        <Link href="explore">
           <div 
             id={styles["explore-more-dorms"]}
             className={styles["work-card"]}  
