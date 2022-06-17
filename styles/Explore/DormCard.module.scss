@@ -1,7 +1,10 @@
+@use "../constants";
+
 .dorm-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: constants.$primary-font;
   font-weight: 500;
   font-size: 0.75rem;
   width: 12rem;

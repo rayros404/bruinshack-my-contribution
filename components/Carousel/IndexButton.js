@@ -5,7 +5,7 @@ const IndexButton = (props) => {
       className={styles["indexBtn"]}
       onClick={props.indexSlide}
       style={{
-        backgroundColor: props.backgroundColor
+        backgroundColor: props.currSlide === props.idx ? "#2774ae" : "#808080"
       }}
     >
     </button>

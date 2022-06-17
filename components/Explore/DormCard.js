@@ -1,8 +1,10 @@
 import styles from "../../styles/Explore/DormCard.module.scss"
 import Image from "next/image"
+import Link from "next/link"
 
 const DormCard = (props) => {
   return (
+    <Link href={props.route}>
     <div className={styles["dorm-card"]}>
       <div className={styles["image-wrapper"]}>
         <Image 
@@ -28,6 +30,7 @@ const DormCard = (props) => {
         <div className={styles["review-count"]}>({props.reviews} reviews)</div>
       </section>
     </div>
+    </Link>
   )
 }
 

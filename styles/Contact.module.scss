@@ -1,7 +1,7 @@
 @use "constants";
 
 #contact-page {
-	height: 100vh;
+	height: calc(100vh + 5rem);
 	font-family: constants.$primary-font;
 	display: flex;
 	flex-direction: column;
@@ -69,7 +69,19 @@
 }
 
 @media screen and (max-width: constants.$mobile) {
+	#contact-page {
+		#contact-header {
+			font-size: 2.5rem;
+		}
+}
 	#contact-page > #contact-form > .form-field > .field-input {
 		width: 300px;
+	}
+}
+@media screen and (max-width: 480px) {
+	#contact-page {
+		#contact-header {
+			font-size: 2rem;
+		}
 	}
 }

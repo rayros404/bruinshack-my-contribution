@@ -4,6 +4,32 @@ import Image from "next/image"
 import IndexButton from "./IndexButton"
 
 const Carousel = (props) => {
+  const [currSlide, setCurrSlide] = useState(0)
+  const indices = (Array.isArray(props.children) ? 
+    props.children.map((slide, idx) => (
+      <IndexButton 
+        key={idx}
+        idx={idx}
+        currSlide={currSlide}
+        indexSlide={() => indexSlide(idx)}
+      />
+    ))
+    :
+    null
+  )
+
+  const nextSlide = () => {
+    if (currSlide < props.children.length - 1) setCurrSlide(curr => curr + 1)
+    else setCurrSlide(0)
+  } 
+  const prevSlide = () => {
+    if (currSlide > 0) setCurrSlide(curr => curr - 1)
+    else setCurrSlide(props.children.length - 1)
+  } 
+  const indexSlide = (idx) => {
+    setCurrSlide(idx)
+  }
+
   const useGetMargins = () => {
     const [margins, setMargins] = useState()
     useEffect(() => {
@@ -27,7 +53,7 @@ const Carousel = (props) => {
         <div 
           className={styles["slideWrapper"]}
           style={
-            {transform: `translateX(calc(${props.currSlide} * (-100vw + ${margins}px)))`}
+            {transform: `translateX(calc(${currSlide} * (-100vw + ${margins}px)))`}
           }
         >
           {props.children}
@@ -36,7 +62,7 @@ const Carousel = (props) => {
       <div className={styles["indexBtnContainer"]}>
         <button 
           className={`${styles["arrow"]} ${styles["left"]}`}
-          onClick={props.prevSlide}
+          onClick={prevSlide}
         > 
           <Image 
             src="/../public/chevron-right.png"
@@ -45,11 +71,11 @@ const Carousel = (props) => {
           />
         </button>
         <div className={styles["indices"]}>
-          {props.indices}
+          {indices}
         </div>
         <button 
           className={`${styles["arrow"]} ${styles["right"]}`}
-          onClick={props.nextSlide}
+          onClick={nextSlide}
         >
           <Image 
             src="/../public/chevron-right.png"

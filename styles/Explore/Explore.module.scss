@@ -2,35 +2,23 @@
 
 #explore {
   font-family: constants.$primary-font;
-  padding: 64px 100px;
-  #dorm-name {
+  padding: 7rem 100px 3rem 100px;
+  text-align: center;
+  #title {
+    font-weight: 500;
     font-size: 2rem;
-    font-weight: 600;
-    padding: 2rem 0;
   }
-  #dorm-content {
+  #dormCards {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: constants.$light-primary-color;
-    height: 70vh;
-    width: 100%;
-  }
-  #explore-more-dorms {
-    #header {
-      font-size: 1.5rem;
-      font-weight: 600;
-      padding: 2rem 0;
-    }
-    #dorms-container {
-      display: flex;
-      justify-content: space-around;
-    }
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 2rem 0;
   }
 }
-
 @media screen and (max-width: 767px) {
   #explore {
-    padding: 64px 32px;
+  padding: 5rem 32px;
   }
 }

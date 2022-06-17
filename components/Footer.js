@@ -27,7 +27,7 @@ const Footer = () => {
             Contact Us
           </button>
         </Link>
-        <Link href="/">
+        <Link href="/explore">
           <button 
             className={styles["footer-link"]}
           >

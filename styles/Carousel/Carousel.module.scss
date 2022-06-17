@@ -50,3 +50,25 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .carouselWrapper {
+    .carousel {
+      padding: 1rem 0;
+    }
+    .indexBtnContainer {
+      gap: 1rem;
+      margin-top: 1rem;
+      .arrow {
+        height: 15px;
+        width: 15px;
+      }
+      .left {
+        left: 1rem;
+      }
+      .right {
+        right: 1rem;
+      }
+    }
+  }
+}
