@@ -12,35 +12,41 @@
       display: flex;
       transition: 0.3s;
     } 
+  }
+  .indexBtnContainer {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
     .arrow {
-      position: absolute;
-      top: 0;
-      bottom: 0;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 45px;
-      width: 45px;
+      height: 15px;
+      width: 15px;
       background-color: white;
       opacity: 50%;
       margin: auto;
       border: none;
       border-radius: 50%;
-      z-index: 2;
       cursor: pointer;
-    }
-    .arrow:hover {
-      opacity: 90%;
     }
     .left {
       left: 1rem;
+      transform: rotate(180deg);
     }
     .right {
       right: 1rem;
-      transform: rotate(180deg);
     }
   }
-  .indexBtnContainer {
-    display: flex;
+}
+
+@media screen and (min-width: 1200px) {
+  .carouselWrapper {
+    .indexBtnContainer {
+      .arrow {
+        display: none;
+      }
+    }
   }
 }

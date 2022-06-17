@@ -1,7 +1,7 @@
 import styles from "../../styles/Explore/DormCard.module.scss"
 import Image from "next/image"
 
-const DormCard = () => {
+const DormCard = (props) => {
   return (
     <div className={styles["dorm-card"]}>
       <div className={styles["image-wrapper"]}>
@@ -13,7 +13,7 @@ const DormCard = () => {
         />
       </div>
       <div className={styles["dorm-name"]}>
-        Rieber Vista
+        {props.name}
       </div>
       <section className={styles["reviews-section"]}>
         <div className={styles["star"]}>
@@ -24,8 +24,8 @@ const DormCard = () => {
             width={15}
           />
         </div>
-        <div className={styles["review-rating"]}>4.25</div>
-        <div className={styles["review-count"]}>(71 reviews)</div>
+        <div className={styles["review-rating"]}>{props.rating}</div>
+        <div className={styles["review-count"]}>({props.reviews} reviews)</div>
       </section>
     </div>
   )

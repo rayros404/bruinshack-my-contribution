@@ -1,9 +1,11 @@
 $margin: 200px;
 
 .slide {
-  width: calc(100vw - $margin);
+  width: calc(100vw - 200px);
 }
 
 @media screen and (max-width: 767px) {
-  $margin: 32px;
+  .slide {
+    width: calc(100vw - 64px);
+  }
 }

@@ -1,9 +1,15 @@
 .indexBtn {
-  height: 0.5rem;
-  width: 0.5rem;
-  margin: 0.5rem 0.5rem 0 0.5rem;
+  height: 0.75rem;
+  width: 0.75rem;
+  margin: 0 0.75rem 0 0.75rem;
   border: none;
   border-radius: 50%;
   transition: 0.2s;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .indexBtn {
+    display: none;
+  }
 }

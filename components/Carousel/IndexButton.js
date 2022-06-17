@@ -4,13 +4,9 @@ const IndexButton = (props) => {
     <button 
       className={styles["indexBtn"]}
       onClick={props.indexSlide}
-      style={
-        {
-          backgroundColor: props.currSlide === props.idx ? 
-          "#2774ae" :
-          "#4899d6"
-        }
-      }
+      style={{
+        backgroundColor: props.backgroundColor
+      }}
     >
     </button>
   )
