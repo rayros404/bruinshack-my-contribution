@@ -11,7 +11,7 @@ const TeamCard = (props) => {
           <Image
             // unique className as Next Image component does not support className
             className="TeamCard_headshot"
-            src="/../public/Team/headshot-placeholder.png"
+            src={"/../public/Team/headshot-placeholder.png"}
             height={139} 
             width={170}
             alt="headshot"
