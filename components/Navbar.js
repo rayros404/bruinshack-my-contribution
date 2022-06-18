@@ -39,6 +39,7 @@ const Navbar = () => {
               src="/../public/chevron-down.png"
               height={24}
               width={24}
+              alt="down arrow button"
             />
           </div>
         </button>

@@ -41,7 +41,7 @@ const Team = () => {
       <main id={styles["main"]}>
         <section id={styles["summary"]}>
           <div id={styles["summary-title"]}>STUDENTS BUILDING FOR STUDENTS</div>
-          <div id={styles["summary-text"]}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+          <div id={styles["summary-text"]}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
         </section>
         <section id={styles["founder"]}>
           <div id={styles["founder-wrapper"]}>
@@ -124,6 +124,7 @@ const Team = () => {
             src="/../public/Team/team-footer-splash.png"
             height={442}
             width={644}
+            alt="team graphic"
           />
         </div>
         <div id={styles["footer-content"]}>
@@ -157,32 +158,36 @@ const Team = () => {
             </li>
           </ul>
           <div id={styles["content-socials"]}>
-            <a className={styles["social-link"]} href="https://www.facebook.com/bruinshack/" target="_blank">
+            <a className={styles["social-link"]} href="https://www.facebook.com/bruinshack/" target="_blank" rel="noreferrer">
               <Image 
               src="/../public/Team/socials-icons/facebook-icon.png"
               height={60}  
               width={60}
+              alt="facebook icon"
               />
             </a>
-            <a className={styles["social-link"]} href="https://www.instagram.com/bruinshack/?hl=en" target="_blank">
+            <a className={styles["social-link"]} href="https://www.instagram.com/bruinshack/?hl=en" target="_blank" rel="noreferrer">
               <Image 
               src="/../public/Team/socials-icons/instagram-icon.png"
               height={60}  
               width={60}
+              alt="instagram icon"
               />
             </a>
-            <a className={styles["social-link"]} href="https://www.twitter.com/bruinshack/" target="_blank">
+            <a className={styles["social-link"]} href="https://www.twitter.com/bruinshack/" target="_blank" rel="noreferrer">
               <Image 
               src="/../public/Team/socials-icons/twitter-icon.png"
               height={60}  
               width={60}
+              alt="twitter icon"
               />
             </a>
-            <a className={styles["social-link"]} href="https://www.linkedin.com/company/bruinshack/" target="_blank">
+            <a className={styles["social-link"]} href="https://www.linkedin.com/company/bruinshack/" target="_blank" rel="noreferrer">
               <Image 
               src="/../public/Team/socials-icons/linkedin-icon.png"
               height={60}  
               width={60}
+              alt="linkedin icon"
               />
             </a>
           </div>

@@ -68,6 +68,7 @@ const Carousel = (props) => {
             src="/../public/chevron-right.png"
             height={30}
             width={30}
+            alt="left arrow button"
           />
         </button>
         <div className={styles["indices"]}>
@@ -81,6 +82,7 @@ const Carousel = (props) => {
             src="/../public/chevron-right.png"
             height={30}
             width={30}
+            alt="right arrow button"
           />
         </button>
       </div>

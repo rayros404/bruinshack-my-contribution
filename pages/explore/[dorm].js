@@ -7,7 +7,7 @@ import Slide from "../../components/Carousel/Slide"
 import { useRouter } from "next/router"
 
 
-const dormPage = (props) => {
+const DormPage = (props) => {
   const router = useRouter()
   const [dormCards, setDormCards] = useState([])
 
@@ -117,4 +117,4 @@ const dormPage = (props) => {
   )
 }
 
-export default dormPage
+export default DormPage

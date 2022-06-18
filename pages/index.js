@@ -9,7 +9,7 @@ const Home = () => {
     <main id={styles["home"]}>
       <div id={styles["header"]}>
         <div id={styles["header-title"]}>BruinShack</div>
-        <div id={styles["header-subtitle"]}>Ray's Contribution</div>
+        <div id={styles["header-subtitle"]}>Ray&#39;s Contribution</div>
           <button id={styles["header-btn"]} onClick={executeScroll}>View Work</button>
       </div>
       <h1 id={styles["my-work-title"]} ref={myWork}>My Work</h1>

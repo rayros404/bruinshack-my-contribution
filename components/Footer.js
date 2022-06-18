@@ -35,7 +35,7 @@ const Footer = () => {
           </button>
         </Link>
         <a href="https://www.bruinshack.com/"
-        target="_blank">
+        target="_blank" rel="noreferrer">
           <button 
             className={styles["footer-link"]}
           >
@@ -48,24 +48,28 @@ const Footer = () => {
           className={styles["icon-link"]} 
           href="https://github.com/rayros404"
           target="_blank"
+          rel="noreferrer"
           >
           <span className={styles["link-name"]}>My GitHub</span>
           <Image 
             src="/../public/github-icon.png"
             height={64}
             width={64}
+            alt="github icon"
           />
         </a>
         <a 
           className={styles["icon-link"]}
           href="https://www.linkedin.com/in/rayros/"
           target="_blank"
+          rel="noreferrer"
         >
           <span className={styles["link-name"]}>My LinkedIn</span>
           <Image 
             src="/../public/linkedin-icon.png"
             height={64}
             width={64}
+            alt="linkedin icon"
           />
         </a>
       </div>

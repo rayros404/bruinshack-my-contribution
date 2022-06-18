@@ -14,6 +14,7 @@ const TeamCard = (props) => {
             src="/../public/Team/headshot-placeholder.png"
             height={139} 
             width={170}
+            alt="headshot"
             />
         </div>
         <div className={styles["card-name"]}>{props.name}</div>
@@ -21,31 +22,33 @@ const TeamCard = (props) => {
         <div className={styles["socials-container"]}>
           {props.email !== "" && 
           <div>
-            <a href={props.email} target="_blank">
+            <a href={props.email} target="_blank" rel="noreferrer">
               <Image 
                 className={styles["social-icon"]}
                 src="/../public/Team/socials-icons/email-icon.png"
                 height={22.5}
                 width={22.5}
+                alt="email icon"
               />
             </a>
           </div>
           }
           {props.linkedin !== "" && 
           <div>
-            <a href={props.linkedin} target="_blank">
+            <a href={props.linkedin} target="_blank" rel="noreferrer">
               <Image 
                 className={styles["social-icon"]}
                 src="/../public/Team/socials-icons/linkedin-icon.png"
                 height={22.5}
                 width={22.5}
+                alt="linkedin icon"
               />
             </a>
           </div>
           }
         </div>
         {props.portfolio !== "" && 
-            <a href={props.portfolio} target="_blank">
+            <a href={props.portfolio} target="_blank" rel="noreferrer">
               <button className={styles["portfolio-btn"]}>View Portfolio</button>
             </a>
           }
