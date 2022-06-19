@@ -8,7 +8,7 @@ const DormCard = (props) => {
     <div className={styles["dorm-card"]}>
       <div className={styles["image-wrapper"]}>
         <Image 
-          src="/../public/Explore/dorm-image.png"
+          src="/Explore/dorm-image.png"
           alt="dorm"
           height={130}
           width={194}
@@ -20,7 +20,7 @@ const DormCard = (props) => {
       <section className={styles["reviews-section"]}>
         <div className={styles["star"]}>
           <Image 
-            src="/../public/Explore/yellow-star.png"
+            src="/Explore/yellow-star.png"
             alt="star"
             height={15}
             width={15}

@@ -25,7 +25,7 @@ const TeamCard = (props) => {
             <a href={props.email} target="_blank" rel="noreferrer">
               <Image 
                 className={styles["social-icon"]}
-                src="/../public/Team/socials-icons/email-icon.png"
+                src="/Team/socials-icons/email-icon.png"
                 height={22.5}
                 width={22.5}
                 alt="email icon"
@@ -38,7 +38,7 @@ const TeamCard = (props) => {
             <a href={props.linkedin} target="_blank" rel="noreferrer">
               <Image 
                 className={styles["social-icon"]}
-                src="/../public/Team/socials-icons/linkedin-icon.png"
+                src="/Team/socials-icons/linkedin-icon.png"
                 height={22.5}
                 width={22.5}
                 alt="linkedin icon"

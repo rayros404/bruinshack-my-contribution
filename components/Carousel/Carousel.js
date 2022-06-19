@@ -65,7 +65,7 @@ const Carousel = (props) => {
           onClick={prevSlide}
         > 
           <Image 
-            src="/../public/chevron-right.png"
+            src="/chevron-right.png"
             height={30}
             width={30}
             alt="left arrow button"
@@ -79,7 +79,7 @@ const Carousel = (props) => {
           onClick={nextSlide}
         >
           <Image 
-            src="/../public/chevron-right.png"
+            src="/chevron-right.png"
             height={30}
             width={30}
             alt="right arrow button"

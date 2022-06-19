@@ -36,7 +36,7 @@ const Navbar = () => {
             style={{transform: showPages ? "rotate(180deg)" : "none"}}
           >
             <Image 
-              src="/../public/chevron-down.png"
+              src="/chevron-down.png"
               height={24}
               width={24}
               alt="down arrow button"

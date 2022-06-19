@@ -52,7 +52,7 @@ const Footer = () => {
           >
           <span className={styles["link-name"]}>My GitHub</span>
           <Image 
-            src="/../public/github-icon.png"
+            src="/github-icon.png"
             height={64}
             width={64}
             alt="github icon"
@@ -66,7 +66,7 @@ const Footer = () => {
         >
           <span className={styles["link-name"]}>My LinkedIn</span>
           <Image 
-            src="/../public/linkedin-icon.png"
+            src="/linkedin-icon.png"
             height={64}
             width={64}
             alt="linkedin icon"

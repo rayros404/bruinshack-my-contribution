@@ -64,7 +64,7 @@ const Team = () => {
           </div>
           <div id={styles["founder-img"]}>
             <Image 
-              src="/../public/Team/headshot-placeholder.png"
+              src="/Team/headshot-placeholder.png"
               alt="founder headshot"
               width={392}
               height={544}
@@ -121,7 +121,7 @@ const Team = () => {
       <footer id={styles["footer"]}>
         <div id={styles["footer-img"]}>
           <Image
-            src="/../public/Team/team-footer-splash.png"
+            src="/Team/team-footer-splash.png"
             height={442}
             width={644}
             alt="team graphic"
@@ -160,7 +160,7 @@ const Team = () => {
           <div id={styles["content-socials"]}>
             <a className={styles["social-link"]} href="https://www.facebook.com/bruinshack/" target="_blank" rel="noreferrer">
               <Image 
-              src="/../public/Team/socials-icons/facebook-icon.png"
+              src="/Team/socials-icons/facebook-icon.png"
               height={60}  
               width={60}
               alt="facebook icon"
@@ -168,7 +168,7 @@ const Team = () => {
             </a>
             <a className={styles["social-link"]} href="https://www.instagram.com/bruinshack/?hl=en" target="_blank" rel="noreferrer">
               <Image 
-              src="/../public/Team/socials-icons/instagram-icon.png"
+              src="/Team/socials-icons/instagram-icon.png"
               height={60}  
               width={60}
               alt="instagram icon"
@@ -176,7 +176,7 @@ const Team = () => {
             </a>
             <a className={styles["social-link"]} href="https://www.twitter.com/bruinshack/" target="_blank" rel="noreferrer">
               <Image 
-              src="/../public/Team/socials-icons/twitter-icon.png"
+              src="/Team/socials-icons/twitter-icon.png"
               height={60}  
               width={60}
               alt="twitter icon"
@@ -184,7 +184,7 @@ const Team = () => {
             </a>
             <a className={styles["social-link"]} href="https://www.linkedin.com/company/bruinshack/" target="_blank" rel="noreferrer">
               <Image 
-              src="/../public/Team/socials-icons/linkedin-icon.png"
+              src="/Team/socials-icons/linkedin-icon.png"
               height={60}  
               width={60}
               alt="linkedin icon"
